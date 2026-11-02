@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Pickup - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="donor-dashboard.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="donor-dashboard.html">My Pickups</a>
+        <a href="request-pickup.html">New Request</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="javascript:void(0)" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="box" style="max-width: 650px; margin: 20px auto;">
+      <div class="top-bar-action">
+        <h1 style="border: none; margin: 0; padding: 0;" id="requestTitle">Track Pickup Request</h1>
+        <a href="donor-dashboard.html" class="btn btn-secondary btn-small">Back to Dashboard</a>
+      </div>
+
+      <!-- Request summary -->
+      <div id="requestDetails" class="box" style="background: #fafafa; padding: 12px; margin-bottom: 20px;">
+        <!-- Filled by JS -->
+      </div>
+
+      <h2>Pickup Progress</h2>
+      <ul class="tracking-steps" id="stepsList">
+        <li class="tracking-step" id="step-Requested">1. Requested</li>
+        <li class="tracking-step" id="step-Assigned">2. Assigned</li>
+        <li class="tracking-step" id="step-Collected">3. Collected</li>
+        <li class="tracking-step" id="step-Verified">4. Verified</li>
+        <li class="tracking-step" id="step-Completed">5. Completed</li>
+      </ul>
+
+      <!-- Status note for Cancelled or Disputed -->
+      <div id="statusNotice" style="display: none;"></div>
+
+      <!-- Actions Area -->
+      <div id="actionsContainer" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #ddd;">
+        <!-- Cancel button only when allowed (Requested or Assigned) -->
+        <button id="cancelBtn" class="btn btn-secondary" style="display: none;">Cancel Pickup</button>
+
+        <!-- Raise Dispute button only after Collected -->
+        <button id="disputeBtn" class="btn" style="display: none; background-color: #666666; border-color: #666666;">Raise Dispute</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="track-pickup.js"></script>
+</body>
+</html>
+

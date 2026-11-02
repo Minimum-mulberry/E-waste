@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="index.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="box" style="max-width: 440px; margin: 30px auto;">
+      <h1>Register Account</h1>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required placeholder="Enter full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="Enter email address">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="Create password">
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role</label>
+          <select id="role" required>
+            <option value="Donor">Donor</option>
+            <option value="Collector">Collector</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn" style="width: 100%;">Register</button>
+        </div>
+      </form>
+
+      <p class="help-text">
+        Already have an account? <a href="index.html">Login here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
+

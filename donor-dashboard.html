@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donor Dashboard - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="donor-dashboard.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="donor-dashboard.html">My Pickups</a>
+        <a href="request-pickup.html">New Request</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="javascript:void(0)" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="top-bar-action">
+      <div>
+        <h1 style="border: none; margin: 0; padding: 0;">My Pickup Requests</h1>
+        <p class="help-text" id="donorNameDisplay">Logged in as Donor</p>
+      </div>
+      <div>
+        <a href="request-pickup.html" class="btn">New Request</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Pickup History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Item Details</th>
+            <th>Quantity</th>
+            <th>Est. Weight</th>
+            <th>Pickup Address</th>
+            <th>Scheduled Time</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="requestsTableBody">
+          <!-- Populated by donor-dashboard.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="donor-dashboard.js"></script>
+</body>
+</html>
+

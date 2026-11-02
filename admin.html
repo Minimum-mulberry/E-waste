@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="admin.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="admin.html">Admin Dashboard</a>
+        <a href="javascript:void(0)" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="top-bar-action">
+      <div>
+        <h1 style="border: none; margin: 0; padding: 0;">Admin Management Panel</h1>
+        <p class="help-text" id="adminNameDisplay">Logged in as Admin</p>
+      </div>
+    </div>
+
+    <!-- Section 1: Users Table -->
+    <div class="box">
+      <h2>Registered Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody id="usersTableBody">
+          <!-- Populated by admin.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 2: Disputes Table with Approve and Reject buttons -->
+    <div class="box">
+      <h2>Disputes Management</h2>
+      <p class="help-text" style="margin-bottom: 10px;">
+        Review disputes raised by donors after collection. Approving marks request as Verified and awards rewards. Rejecting cancels the request.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Donor</th>
+            <th>Item & Weight</th>
+            <th>Pickup Address</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="disputesTableBody">
+          <!-- Populated by admin.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rewards - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="donor-dashboard.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="donor-dashboard.html">My Pickups</a>
+        <a href="request-pickup.html">New Request</a>
+        <a href="rewards.html">Rewards</a>
+        <a href="javascript:void(0)" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="top-bar-action">
+      <h1 style="border: none; margin: 0; padding: 0;">Reward Points</h1>
+      <a href="donor-dashboard.html" class="btn btn-secondary btn-small">Back to Dashboard</a>
+    </div>
+
+    <!-- Points Summary Box -->
+    <div class="box" style="margin-bottom: 20px;">
+      <h2>Total Balance</h2>
+      <p style="font-size: 24px; font-weight: bold; color: #2e7d32; margin: 10px 0;">
+        <span id="totalPoints">0</span> Points
+      </p>
+      <p class="help-text">Points are credited automatically when a pickup is verified and completed.</p>
+    </div>
+
+    <!-- Reward Transactions Table -->
+    <div class="box">
+      <h2>Reward Transactions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Txn ID</th>
+            <th>Request ID</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody id="rewardTxnTableBody">
+          <!-- Filled by rewards.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="rewards.js"></script>
+</body>
+</html>
+

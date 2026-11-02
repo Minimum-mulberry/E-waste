@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collector Dashboard - E-Waste Pickup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="collector-dashboard.html" class="brand">E-Waste Pickup</a>
+      <div class="nav-links">
+        <a href="collector-dashboard.html">Collector Dashboard</a>
+        <a href="javascript:void(0)" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="top-bar-action">
+      <div>
+        <h1 style="border: none; margin: 0; padding: 0;">Collector Dashboard</h1>
+        <p class="help-text" id="collectorNameDisplay">Logged in as Collector</p>
+      </div>
+    </div>
+
+    <!-- Requests Table -->
+    <div class="box">
+      <h2>Pickup Requests List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Item & Quantity</th>
+            <th>Weight</th>
+            <th>Pickup Address</th>
+            <th>Scheduled Time</th>
+            <th>Status</th>
+            <th style="min-width: 220px;">Action / Verification</th>
+          </tr>
+        </thead>
+        <tbody id="collectorTableBody">
+          <!-- Populated by collector-dashboard.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="collector-dashboard.js"></script>
+</body>
+</html>
+

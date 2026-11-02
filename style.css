@@ -1,0 +1,241 @@
+/* College Software Engineering Project: E-Waste Pickup System */
+/* Common CSS styles shared across all pages */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Top Navbar */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  padding: 12px 20px;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+/* Centered Main Container */
+.container {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+/* Headings */
+h1 {
+  font-size: 20px;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #dddddd;
+}
+
+h2 {
+  font-size: 16px;
+  color: #222222;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* White box container for forms or content */
+.box {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background-color: #eeeeee;
+  color: #111111;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #fcfcfc;
+}
+
+/* Forms and Inputs */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+  font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+textarea {
+  height: 70px;
+  resize: vertical;
+}
+
+input[type="file"] {
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: 1px solid #2e7d32;
+  padding: 7px 14px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #256628;
+}
+
+/* Secondary Button (Grey) */
+.btn-secondary {
+  background-color: #666666;
+  border: 1px solid #666666;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #555555;
+}
+
+/* Inline small buttons for table cells */
+.btn-small {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Tracking Step List */
+.tracking-steps {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.tracking-step {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tracking-step.current {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border-color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Utility helpers */
+.help-text {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.info-banner {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-left: 4px solid #2e7d32;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.error-banner {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-left: 4px solid #666666;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.top-bar-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
